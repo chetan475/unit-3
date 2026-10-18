@@ -4,8 +4,8 @@ Practical assignment for the **Networking Protocols & Communication (NPC)** cour
 
 | | |
 |---|---|
-| **Student** | Shubham Shinde |
-| **PRN** | 2125UCSM1042 |
+| **Student** | Chetan Kharade |
+| **PRN** | 2125UCSM1012 |
 | **Department** | Cyber Security |
 | **Semester** | 3rd Semester (Second Year) |
 | **Subject** | NPC – Unit 3 |
@@ -41,7 +41,7 @@ packet loss, and the website opened successfully on PC0 via
 
 | File | Description |
 |---|---|
-| `NPC_Unit_3_Shubham_Shinde.pdf` | Full practical report (submission copy) |
+| `NPC_Unit_3_Chetan_Kharade.pdf` | Full practical report (submission copy) |
 | `NPC_Unit_3_DNS_Web_Server.pkt` | Cisco Packet Tracer project file |
 | `screenshots/` | Real Packet Tracer screenshots (topology, ping, website) |
 | `build_pdf.py` | Script used to generate the PDF report |

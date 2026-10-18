@@ -2,10 +2,10 @@
 """
 Build a professional, submission-ready A4 PDF for:
   NPC - Unit 3 : Configure a DNS Server and Web Server Using Cisco Packet Tracer
-Student: Shubham Shinde (PRN 2125UCSM1042)
+Student: Chetan Kharade (PRN 2125UCSM1012)
 
 Embeds the student's real Cisco Packet Tracer screenshots.
-Output: NPC_Unit_3_Shubham_Shinde.pdf
+Output: NPC_Unit_3_Chetan_Kharade.pdf
 """
 
 import os
@@ -27,7 +27,7 @@ from reportlab.platypus import (
 from reportlab.pdfgen import canvas
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "NPC_Unit_3_Shubham_Shinde.pdf")
+OUT = os.path.join(HERE, "NPC_Unit_3_Chetan_Kharade.pdf")
 
 # ---------------------------------------------------------------- palette
 NAVY = HexColor(0x1F3864)       # dark blue headings
@@ -241,7 +241,7 @@ class NumberedCanvas(canvas.Canvas):
         self.setFont("Helvetica", 8)
         self.setFillColor(GREY)
         self.drawString(2 * cm, 1.05 * cm,
-                        "NPC \u2013 Unit 3  |  Shubham Shinde  |  PRN 2125UCSM1042")
+                        "NPC \u2013 Unit 3  |  Chetan Kharade  |  PRN 2125UCSM1012")
         self.drawRightString(A4[0] - 2 * cm, 1.05 * cm,
                              "Page %d of %d" % (self._pageNumber, total))
 
@@ -263,8 +263,8 @@ def cover(story):
     story.append(Spacer(1, 0.5 * cm))
 
     rows = [
-        ("Student Name", "Shubham Shinde"),
-        ("PRN", "2125UCSM1042"),
+        ("Student Name", "Chetan Kharade"),
+        ("PRN", "2125UCSM1012"),
         ("Department", "Cyber Security"),
         ("Semester", "3rd Semester"),
         ("Year", "Second Year"),
@@ -289,8 +289,8 @@ def cover(story):
     story.append(Spacer(1, 0.8 * cm))
     story.append(Paragraph(
         'GitHub Repository:&nbsp; '
-        '<link href="https://github.com/ShubhamShinde148/Unit_3_DNS_Web_Server" '
-        'color="#2E5496"><u>github.com/ShubhamShinde148/Unit_3_DNS_Web_Server</u></link>',
+        '<link href="https://github.com/chetan475/unit-3" '
+        'color="#2E5496"><u>github.com/chetan475/unit-3</u></link>',
         P("cvrepo", alignment=TA_CENTER, fontSize=10.5, textColor=GREY, leading=15)))
     story.append(Spacer(1, 1.1 * cm))
     story.append(Paragraph(
@@ -549,8 +549,8 @@ def build():
         OUT, pagesize=A4,
         leftMargin=2 * cm, rightMargin=2 * cm,
         topMargin=2 * cm, bottomMargin=2 * cm,
-        title="NPC Unit 3 - DNS and Web Server (Shubham Shinde)",
-        author="Shubham Shinde",
+        title="NPC Unit 3 - DNS and Web Server (Chetan Kharade)",
+        author="Chetan Kharade",
     )
     frame = Frame(doc.leftMargin, doc.bottomMargin,
                   doc.width, doc.height, id="main")
